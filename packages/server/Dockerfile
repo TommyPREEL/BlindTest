@@ -6,6 +6,7 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 COPY packages/shared/package.json ./packages/shared/
 COPY packages/server/package.json ./packages/server/
+COPY packages/client/package.json ./packages/client/
 
 RUN npm ci
 
@@ -16,7 +17,7 @@ COPY packages/server ./packages/server
 
 # Build shared first, then server
 RUN npm -w @blindtest/shared run build
-RUN npm -w @blindtest/server run build
+RUN cd packages/server && npx tsc -p tsconfig.build.json
 
 # Production stage
 FROM node:20-alpine
@@ -25,6 +26,7 @@ WORKDIR /app
 COPY package.json package-lock.json* ./
 COPY packages/shared/package.json ./packages/shared/
 COPY packages/server/package.json ./packages/server/
+COPY packages/client/package.json ./packages/client/
 
 RUN npm ci --omit=dev
 
