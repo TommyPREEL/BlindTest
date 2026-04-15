@@ -1,0 +1,27 @@
+services:
+  blindtest-server:
+    container_name: blindtest-server
+    image: ${SERVER_IMAGE}
+    restart: always
+    environment:
+      - PORT=3950
+    expose:
+      - "3950"
+    networks:
+      - web
+
+  blindtest-client:
+    container_name: blindtest-client
+    image: ${CLIENT_IMAGE}
+    restart: always
+    ports:
+      - "3900:80"
+    depends_on:
+      - blindtest-server
+    networks:
+      - web
+
+networks:
+  web:
+    external: true
+    name: web
