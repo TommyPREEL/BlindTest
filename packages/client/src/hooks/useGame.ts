@@ -53,7 +53,7 @@ export function useGame() {
     });
 
     socket.on("room:joined", ({ code, players, config }) => {
-      const me = players.find((p) => p.id === socket.id) ?? null;
+      const me = players.find((p: Player) => p.id === socket.id) ?? null;
       patch({ page: "lobby", roomCode: code, me, players, config, error: null });
     });
 
@@ -106,11 +106,11 @@ export function useGame() {
     socket.on("game:round_end", ({ result }) => {
       // Update local player scores
       setState((prev) => {
-        const updatedPlayers = prev.players.map((p) => {
-          const scored = result.scores.find((s) => s.playerId === p.id);
+        const updatedPlayers = prev.players.map((p: Player) => {
+          const scored = result.scores.find((s: PlayerScore) => s.playerId === p.id);
           return scored ? { ...p, score: scored.totalScore } : p;
         });
-        const updatedMe = updatedPlayers.find((p) => p.id === prev.me?.id) ?? prev.me;
+        const updatedMe = updatedPlayers.find((p: Player) => p.id === prev.me?.id) ?? prev.me;
         return { ...prev, roundResult: result, players: updatedPlayers, me: updatedMe };
       });
     });
@@ -121,7 +121,7 @@ export function useGame() {
 
     socket.on("game:restarted", ({ players, config }) => {
       setState((prev) => {
-        const me = players.find((p) => p.id === prev.me?.id) ?? prev.me;
+        const me = players.find((p: Player) => p.id === prev.me?.id) ?? prev.me;
         return {
           ...prev,
           page: "lobby",
