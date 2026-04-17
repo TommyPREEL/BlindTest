@@ -34,19 +34,13 @@ export function scoreGuess(
   const titleSim = compareTwoStrings(g, normTitle);
   const artistSim = compareTwoStrings(g, normArtist);
 
-  // Boost similarity if the guess is a substring of the answer (or vice versa)
-  const titleContains = normTitle.includes(g) || g.includes(normTitle);
-  const artistContains = normArtist.includes(g) || g.includes(normArtist);
-
-  let effectiveTitle = titleContains ? Math.max(titleSim, 0.85) : titleSim;
-  const effectiveArtist = artistContains ? Math.max(artistSim, 0.85) : artistSim;
+  let effectiveTitle = titleSim;
+  const effectiveArtist = artistSim;
 
   // Anime name counts as an alternative for the title slot
   if (normAnime) {
     const animeSim = compareTwoStrings(g, normAnime);
-    const animeContains = normAnime.includes(g) || g.includes(normAnime);
-    const effectiveAnime = animeContains ? Math.max(animeSim, 0.85) : animeSim;
-    effectiveTitle = Math.max(effectiveTitle, effectiveAnime);
+    effectiveTitle = Math.max(effectiveTitle, animeSim);
   }
 
   // Title: up to 500 pts. >= 0.85 = full, >= 0.6 = partial
