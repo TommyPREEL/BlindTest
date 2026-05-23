@@ -322,6 +322,153 @@ const ANIME_OPENINGS: Array<{ title: string; artist: string; show: string }> = [
   // Bleach TYBW
   { title: "STARS", artist: "W.z.s.o.n", show: "Bleach" },
   { title: "Rapport", artist: "Tatsuya Kitani", show: "Bleach" },
+  // Neon Genesis Evangelion (more)
+  { title: "Fly Me to the Moon", artist: "Claire", show: "Neon Genesis Evangelion" },
+  { title: "Komm, süßer Tod", artist: "Anna Kimura", show: "Neon Genesis Evangelion" },
+  // Cowboy Bebop (more)
+  { title: "The Real Folk Blues", artist: "Seatbelts", show: "Cowboy Bebop" },
+  { title: "Blue", artist: "Seatbelts", show: "Cowboy Bebop" },
+  // Seven Deadly Sins
+  { title: "Seven Deadly Sins", artist: "MAN WITH A MISSION", show: "The Seven Deadly Sins" },
+  { title: "Howling", artist: "Flow x Granrodeo", show: "The Seven Deadly Sins" },
+  { title: "Netsujou no Spectrum", artist: "Ikimono-gakari", show: "The Seven Deadly Sins" },
+  { title: "Chikai", artist: "OST", show: "The Seven Deadly Sins" },
+  // Akame ga Kill
+  { title: "Skyreach", artist: "Sora Amamiya", show: "Akame ga Kill" },
+  { title: "Liar Mask", artist: "Rika Mayama", show: "Akame ga Kill" },
+  // Log Horizon
+  { title: "Database", artist: "Man with a Mission", show: "Log Horizon" },
+  { title: "Database feat. takuma", artist: "Man with a Mission feat. takuma", show: "Log Horizon" },
+  // Cells at Work
+  { title: "Mission! Ken-Kou-Dai-Ichi", artist: "Kana Hanazawa", show: "Cells at Work" },
+  // Oshi no Ko
+  { title: "IDOL", artist: "Yoasobi", show: "Oshi no Ko" },
+  // Frieren: Beyond Journey's End
+  { title: "Anytime Anywhere", artist: "milet", show: "Frieren: Beyond Journey's End" },
+  { title: "Yuusha", artist: "YOASOBI", show: "Frieren: Beyond Journey's End" },
+  // Dungeon Meshi / Delicious in Dungeon
+  { title: "Soremoshi", artist: "Ryokuoushoku Shakai", show: "Delicious in Dungeon" },
+  { title: "Sleep Walking Orchestra", artist: "Billlie", show: "Delicious in Dungeon" },
+  // Lycoris Recoil
+  { title: "ALIVE", artist: "ClariS", show: "Lycoris Recoil" },
+  // Bocchi the Rock (more)
+  { title: "Distortion!!!", artist: "Kessoku Band", show: "Bocchi the Rock" },
+  { title: "Karakuri Pierrot", artist: "Kessoku Band", show: "Bocchi the Rock" },
+  // Kakegurui
+  { title: "Deal with the Devil", artist: "Tia", show: "Kakegurui" },
+  { title: "Tsubasa wo Kudasai", artist: "Minami Tanaka", show: "Kakegurui" },
+  // Devilman Crybaby
+  { title: "Man Human", artist: "Denki Groove", show: "Devilman Crybaby" },
+  // Berserk
+  { title: "Tell Me Why", artist: "Penpals", show: "Berserk" },
+  { title: "Forces", artist: "Hirasawa Susumu", show: "Berserk" },
+  { title: "Guts Theme", artist: "Hirasawa Susumu", show: "Berserk" },
+  // Pokemon
+  { title: "Aim to Be a Pokemon Master", artist: "Rica Matsumoto", show: "Pokemon" },
+  { title: "Mezase Pokemon Master", artist: "Rica Matsumoto", show: "Pokemon" },
+  { title: "OK!", artist: "Rica Matsumoto", show: "Pokemon" },
+  // Digimon
+  { title: "Butter-Fly", artist: "Koji Wada", show: "Digimon Adventure" },
+  { title: "Brave Heart", artist: "Ayumi Miyazaki", show: "Digimon Adventure" },
+  // Gintama
+  { title: "Pray", artist: "Tommy Heavenly6", show: "Gintama" },
+  { title: "Donten", artist: "DOES", show: "Gintama" },
+  { title: "Tougenkyou Alien", artist: "Serial TV Drama", show: "Gintama" },
+  // Shaman King
+  { title: "Over Soul", artist: "Megumi Hayashibara", show: "Shaman King" },
+  { title: "Northern Lights", artist: "Megumi Hayashibara", show: "Shaman King" },
+  // Captain Tsubasa
+  { title: "Fighting Spirit", artist: "Mark & Helen", show: "Captain Tsubasa" },
+  // Hajime no Ippo / Fighting Spirit
+  { title: "Under Star", artist: "Tsunami", show: "Hajime no Ippo" },
+  { title: "Shocking!", artist: "Shocking Lemon", show: "Hajime no Ippo" },
+  // Banana Fish
+  { title: "found & lost", artist: "Survive Said The Prophet", show: "Banana Fish" },
+  { title: "Prayer X", artist: "King Gnu", show: "Banana Fish" },
+  // Magi
+  { title: "V.I.P.", artist: "SID", show: "Magi" },
+  { title: "Magi", artist: "Shiraishi Haruka", show: "Magi" },
+  // Naruto (more)
+  { title: "Wind", artist: "Akeboshi", show: "Naruto" },
+  { title: "Ima Made Nando mo", artist: "The Mass Missile", show: "Naruto Shippuden" },
+  { title: "Lover", artist: "Tohoshinki", show: "Naruto Shippuden" },
+  { title: "Spinning World", artist: "Diana Garnet", show: "Naruto Shippuden" },
+  // One Piece (more)
+  { title: "Hands Up!", artist: "Kota Shinzato", show: "One Piece" },
+  { title: "Brand New World", artist: "D-51", show: "One Piece" },
+  { title: "Believe", artist: "Folder5", show: "One Piece" },
+  { title: "Memories", artist: "Maki Otsuki", show: "One Piece" },
+  // Dragon Ball (more)
+  { title: "Head Cha La", artist: "Hironobu Kageyama", show: "Dragon Ball Z" },
+  { title: "We Gotta Power", artist: "Hironobu Kageyama", show: "Dragon Ball Z" },
+  { title: "Dragon Ball Super Hero", artist: "Yuuki Hayashi", show: "Dragon Ball Super" },
+  { title: "Ultra Instinct -Sign-", artist: "Yuuki Hayashi", show: "Dragon Ball Super" },
+  // Attack on Titan (more)
+  { title: "YouSeeBIGGIRL/T:T", artist: "Hiroyuki Sawano", show: "Attack on Titan" },
+  { title: "Call Your Name", artist: "Hiroyuki Sawano", show: "Attack on Titan" },
+  // Vinland Saga (more)
+  { title: "Torches", artist: "Aimer", show: "Vinland Saga" },
+  // Blue Lock (more)
+  { title: "WINNER", artist: "Zillion", show: "Blue Lock" },
+  // Jujutsu Kaisen (more)
+  { title: "SPECIALZ", artist: "King Gnu", show: "Jujutsu Kaisen" },
+  { title: "Ao no Sumika", artist: "Tatsuya Kitani", show: "Jujutsu Kaisen" },
+  // Tokyo Revengers (more)
+  { title: "Redo", artist: "Konomi Suzuki", show: "Tokyo Revengers" },
+  // My Hero Academia (more)
+  { title: "Sora ni Utaeba", artist: "Amazarashi", show: "My Hero Academia" },
+  { title: "Star Maker", artist: "Ryokuoushoku Shakai", show: "My Hero Academia" },
+  // Hunter x Hunter (more)
+  { title: "Hyori Ittai", artist: "Yuzu", show: "Hunter x Hunter" },
+  // Tokyo Ghoul (more)
+  { title: "Seijatachi", artist: "People In The Box", show: "Tokyo Ghoul" },
+  // Chainsaw Man (more)
+  { title: "DOGLAND", artist: "People 1", show: "Chainsaw Man" },
+  { title: "Deep down", artist: "Aimer", show: "Chainsaw Man" },
+  { title: "First Death", artist: "MAXIMUM THE HORMONE", show: "Chainsaw Man" },
+  // Oshi no Ko (more)
+  { title: "Mephisto", artist: "Queen Bee", show: "Oshi no Ko" },
+  // Yuri on Ice (more)
+  { title: "Yuri on Ice", artist: "Taro Umebayashi", show: "Yuri on Ice" },
+  // Re:Zero (more)
+  { title: "Wishing Me Out", artist: "nonoc", show: "Re:Zero" },
+  { title: "Long shot", artist: "Mayu Maeshima", show: "Re:Zero" },
+  // Psycho-Pass (more)
+  { title: "Enigmatic Feeling", artist: "Ling Tosite Sigure", show: "Psycho-Pass" },
+  // Overlord (more)
+  { title: "HOLLOW HUNGER", artist: "OxT", show: "Overlord" },
+  // Slime (more)
+  { title: "Like Flames", artist: "MindaRyn", show: "That Time I Got Reincarnated as a Slime" },
+  // Black Clover (more)
+  { title: "Grandeur", artist: "Snow Man", show: "Black Clover" },
+  { title: "Haruka Mirai", artist: "Kankaku Pierrot", show: "Black Clover" },
+  // Fairy Tail (more)
+  { title: "Believe in Myself", artist: "MAGIC NUMBER", show: "Fairy Tail" },
+  // Sword Art Online (more)
+  { title: "Rainbow", artist: "Humanoid", show: "Sword Art Online" },
+  // Assassination Classroom (more)
+  { title: "Bye Bye Yesterday", artist: "3-nen E-gumi Utatan", show: "Assassination Classroom" },
+  // Dr. Stone (more)
+  { title: "SANGENSHOKU", artist: "PELICAN FANCLUB", show: "Dr. Stone" },
+  // Made in Abyss (more)
+  { title: "Hanako", artist: "Yoshioka", show: "Made in Abyss" },
+  // Konosuba (more)
+  { title: "Chiisana Boukensha", artist: "Sora Amamiya", show: "KonoSuba" },
+  // Spy x Family (more)
+  { title: "Kaze no Yukue", artist: "Hana Hope", show: "Spy x Family" },
+  // Danmachi (more)
+  { title: "Hey World", artist: "Yuka Iguchi", show: "Is It Wrong to Try to Pick Up Girls in a Dungeon" },
+  // Given (more)
+  { title: "Fuyu no Hanashi", artist: "Given", show: "Given" },
+  // Sword Art Online (fight)
+  { title: "Swordland Theme", artist: "Yuki Kajiura", show: "Sword Art Online" },
+  // Bleach (fight)
+  { title: "ON THE PRECIPICE OF DEFEAT", artist: "Shiro Sagisu", show: "Bleach" },
+  // Naruto (fight)
+  { title: "Sadness and Sorrow", artist: "Toshio Masuda", show: "Naruto" },
+  { title: "Strong and Strike", artist: "Toshio Masuda", show: "Naruto" },
+  // Dragon Ball Z (fight)
+  { title: "Solid State Scouter", artist: "Shunsuke Kikuchi", show: "Dragon Ball Z" },
 ];
 
 async function fetchAnime(count: number): Promise<Track[]> {
